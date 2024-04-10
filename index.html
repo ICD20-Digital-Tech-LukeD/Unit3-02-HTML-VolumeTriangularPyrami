@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <!--Links-->
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Title-->
+    <title>Triangular Pyramid Volume Calculator</title>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.jpg">
+    <link rel="manifest" href="site.webmanifest">
   </head>
   <body>
-    <p>Paragraph</p>
+    <!--text-->
+    <h1>Volume of a triangular pyramid calculator</h1>
+    <p>Insert dimensions of the triangle below</p>
+    <!--inputs and labels-->
+    <label for="side-a">Side A (cm):</label>
+    <input type="number" id="side-a" placeholder="Side a">
+    <br>
+    <label for="side-b">Side B (cm):</label>
+    <input type="number" id="side-b" placeholder="Side b">
+    <br>
+    <label for="side-c">Side C (cm):</label>
+    <input type="number" id="side-c" placeholder="Side c">
+    <br>
+    <br>
+    <!--button-->
+    <button onclick="volumeCalculator()">Calculate</button>
+    <br>
+    <br>
+    <!--volume result-->
+    <div id="result"></div>
+    <br>
+    <br>
+    <!--image-->
+    <img src="./images/volume.png" alt="Volume Formula" width="350" height="280">
   </body>
 </html>
